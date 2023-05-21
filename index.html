@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="fan site">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CYBER 13</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div><img src="code.gif" class="theme">
+            <div class="toll_bar">
+                <a href="index.html"><img src="logo.png" class="three"></a>
+                <h1 class="neon">Shop for special stuff</h1>
+                <button class="profile" onclick="openPopup()"></button>
+                <div id="popup" class="pop">
+                    <div class="up">
+                        <img src="skull.png" class="skull">
+                        <h2>No need!</h2>
+                        <p>We have received all your important data and information the moment you click on this site.</p>
+                        <button class="close" type="button" onclick="closePopup()">Close</button>
+                    </div>
+                </div>    
+            </div>
+            <div class="background">
+                <div class="template">
+                    <img src="mot.gif" class="item">
+                    <div class="placement">
+                        <div class="name"><b>Motor x-7000</b></div>
+                        <div class="quality">quality: <a class="good">middle</a></div>
+                        <div class="stats">status: <a class="bad">stolen</a></div>
+                        <div class="stats">stats: <a class="bad">170kph</a></div>
+                        <div class="price">95.000€</div>
+                        <div href="#" class="button">Buy</div>
+                    </div>
+                </div>
+                <div class="template_2">
+                    <img src="arm.gif" class="item">
+                    <div class="placement">
+                        <div class="name"><b>Arm nd-52</b></div>
+                        <div class="quality">quality: <a class="good">middle</a></div>
+                        <div class="stats">status: <a class="bad">stolen</a></div>
+                        <div class="stats">stats: <a class="bad">left hand,</a><a class="good"><br> strength, <a class="good"> mobility</a></div>
+                        <div class="price_2">15.000€</div>
+                        <div href="#" class="button">Buy</div>
+                    </div>
+                </div>
+                <div class="template_2">
+                    <img src="san.gif" class="item">  
+                    <div class="placement">
+                        <div class="name"><b>Sandevistan</b></div>
+                        <div class="quality">quality: <a class="good">perfect</a></div>
+                        <div class="stats">status: <a class="bad">stolen</a></div>
+                        <div class="stats">stats: <a class="bad"> stamina,</a><a class="good"><br> reaction time, speed</a></div>
+                        <div class="price_2">30.000€</div>
+                        <div href="#" class="button">Buy</div>
+                    </div>
+                </div>
+                <div class="template_2">
+                    <img src="deck.gif" class="item">  
+                    <div class="placement">
+                        <div class="name"><b>Cyberdeck</b></div>
+                        <div class="quality">quality: <a class="good">perfect</a></div>
+                        <div class="stats">status: <a class="good">clean</a></div>
+                        <div class="stats">stats:<a class="good">hacks everything, digital access keys</a></div>
+                        <div class="price_2">13.000€</div>
+                        <div href="#" class="button">Buy</div>
+                    </div>
+                </div>
+                <div class="template_2">
+                    <img src="kat.gif" class="item">  
+                    <div class="placement">
+                        <div class="name"><b>Cyber katana</b></div>
+                        <div class="quality">quality: <a class="good">perfect</a></div>
+                        <div class="stats">status: <a class="good">clean</a></div>
+                        <div class="stats" style="margin-bottom: 20px;">stats: <a class="good">sharp, 60cm</a></div>
+                        <div class="price_2">5.000€</div>
+                        <div href="#" class="button">Buy</div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <script>
+            function openPopup(){
+            document.getElementById("popup").style.visibility = "visible";
+            }
+            
+            function closePopup(){
+            document.getElementById("popup").style.visibility = "hidden";
+            }
+
+        </script>
+    </body>
+</html>

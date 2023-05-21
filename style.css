@@ -1,0 +1,245 @@
+*
+html {
+  scroll-behavior: smooth;
+} 
+
+body{
+  margin: 0px;
+  font-family: 'Orbitron';
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 20px;
+  border: .25em solid black;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(19, 19, 184);
+}
+
+.close{
+  color: aliceblue;
+  color: blue; 
+  height: 30px; 
+  width: 100px; 
+  border: 0; 
+  outline: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-family: 'Orbitron'; 
+  letter-spacing: 1.5px;
+
+}
+
+.close:hover{
+  background-color: black;
+
+}
+
+.button{
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: rgb(29, 29, 134);
+  border: 4px solid rgb(29, 29, 134);
+  position: relative;
+  margin-left: 25px;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 3;
+  margin-top: 20px;
+}
+
+.button::before,
+.button::after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all .4s;  
+}
+
+.button::before{
+  top: -15px;
+  left: -15px;
+  border-width: 4px 0 0 4px;  
+}
+
+.button::after{
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 4px 4px 0;  
+}
+
+.button:hover::before,
+.button:hover::after{
+  width: calc(100% + 25px);
+  height: calc(100% + 26px);  
+}
+
+.theme{
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+}
+
+.toll_bar{
+  position: fixed; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: black; 
+  border-bottom: 2px solid whitesmoke; 
+  height: 100px; 
+  width: 100%; 
+  z-index: 5;
+}
+
+.three{
+  height: 100px; 
+  width: 100px; 
+  margin-left: 20px;
+}
+
+.neon{
+  color: whitesmoke; 
+  letter-spacing: 2px; 
+  text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue, 0 0 120px blue;
+}
+
+.profile{
+  background-image: url(profile.png); 
+  background-size: cover; 
+  height: 65px; width: 65px; 
+  margin-right: 20px; 
+  border: none; 
+  border-radius: 100%; 
+  cursor: pointer;
+}
+
+.pop{
+  position: absolute; 
+  top: 0%; 
+  left: 0%; 
+  background-color: rgba(0, 0, 0, 0.800); 
+  width: 1550px; 
+  height: 760px; 
+  visibility: hidden;
+}
+
+.up{
+  width: 550px; 
+  background-color: rgb(52, 88, 247);
+  border-radius: 6px; position: absolute; 
+  text-align: center; letter-spacing: 0.5px; 
+  padding: 30px 30px 30px;
+  color:white; margin-left: 460px; 
+  margin-top: 185px;
+}
+
+.skull{
+  width: 180px; height: 250px;
+}
+
+.background{
+  height: 100%; 
+  width: 950px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: rgba(0, 0, 0, 0.650); 
+  padding-top: 170px;
+}
+
+.template{
+  height: 550px; 
+  width: 900px; 
+  background-image: url(offer.png); 
+  background-size: cover; 
+  display: flex; 
+  flex-direction: row;
+}
+
+.template_2{
+  height: 550px;
+  width: 900px; 
+  margin-top: 160px; 
+  background-image: url(offer.png); 
+  background-size: cover; 
+  display: flex; 
+  flex-direction: row;
+}
+
+.item{
+  height: 350px;
+  width: 500px; 
+  margin-top: 85px; 
+  margin-left: 105px; 
+  box-shadow: -23px 15px 2px rgb( 0, 255, 255)
+}
+
+.placement{
+  display: flex; 
+  flex-direction: column; 
+  row-gap: 15px; 
+  margin-left: 15px; 
+  margin-top: 60px;
+}
+
+.name{
+  width: 220px; 
+  letter-spacing: 2.5px; 
+  color: black; 
+  font-size: 23px; 
+  border-bottom: 5px solid blue; 
+  border-left: 5px solid blue; 
+  padding: 0px 0px 5px 5px;
+}
+
+.quality{
+  letter-spacing: 2px; 
+  color: black; 
+  font-size: 15px; 
+  margin-top: 20px;
+}
+
+.stats{
+  letter-spacing: 2px; 
+  color: black; 
+  font-size: 15px;
+}
+
+.price{
+  letter-spacing: 1.5px; 
+  color: black; 
+  font-size: 40px; 
+  margin-top: 80px;
+}
+
+.price_2{
+  letter-spacing: 1.5px; 
+  color: black; 
+  font-size: 40px; 
+  margin-top: 65px;    
+}
+
+.good{
+  color: rgba(0, 128, 0, 0.886);
+}
+
+.bad{
+  color: rgba(255, 0, 0, 0.847);
+}
